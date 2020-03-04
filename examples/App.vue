@@ -1,10 +1,14 @@
+<!--
+ * @Author: zxd95
+ * @Date: 2020-03-04 21:58:25
+ * @LastEditTime: 2020-03-04 22:17:13
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /dui/examples/App.vue
+ -->
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
