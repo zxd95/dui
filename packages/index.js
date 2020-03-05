@@ -1,18 +1,15 @@
 /*
  * @Author: zxd95
  * @Date: 2020-03-04 22:43:42
- * @LastEditTime: 2020-03-04 22:44:39
- * @LastEditors: Please set LastEditors
- * @Description: In User Settings Edit
- * @FilePath: /dui/packages/index.js
  */
-
 // 导入组件
-// import Tabs from './tabs'
+import DuiButton from './components/button/button.vue'
+import DuiTypography from './components/typography/typography.vue'
 
 // 存储组件列表
 const components = [
-  // TabPane
+  DuiButton,
+  DuiTypography
 ]
 
 // 定义 install 方法，接收 Vue 作为参数。如果使用 use 注册插件，则所有的组件都将被注册
@@ -30,7 +27,8 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   // 导出install，可以 Vue.use() 全局引入
-  install
+  install,
   // 以下是具体的组件列表，可以按需加载
-  // TabPane
+  DuiButton,
+  DuiTypography
 }
