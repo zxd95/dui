@@ -14,4 +14,132 @@
   margin: 0;
   transition: .1s;
   font-weight: 500;
+  // 禁止元素的文字被选中
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-slect: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  &:hover,
+  &:focus {
+    color: #409eff;
+    border-color: #c6e2ff;
+    background-color: #ecf5ff;
+  }
+}
+
+.dui-button.is-plain {
+  &:hover,
+  &:focus {
+    color: #66b1ff;
+    border-color: #66b1ff;
+    background-color: #fff;
+  }
+}
+
+.dui-button--primary {
+  color: #fff;
+  border-color: #409eff;
+  background-color: #409eff;
+  &:hover,
+  &:focus {
+    color: #66b1ff;
+    border-color: #66b1ff;
+    background-color: #fff;
+  }
+}
+
+.dui-button--primary.is-plain {
+  color: #409eff;
+  border-color: #ecf5ff;
+  background-color: #b3d8ff;
+  &:hover,
+  &:focus {
+    color: #409eff;
+    border-color: #409eff;
+    background-color: #fff;
+  }
+}
+
+.dui-button--success {
+  color: #fff;
+  border-color: #67c23a;
+  background-color: #67c23a;
+  &:hover,
+  &:focus {
+    color: #67c23a;
+    border-color: #67c23a;
+    background-color: #fff;
+  }
+}
+
+.dui-button--success.is-plain {
+  color: #67c23a;
+  border-color: #f0f9eb;
+  background-color: #c2e7b0;
+  &:hover,
+  &:focus {
+    color: #67c23a;
+    border-color: #67c23a;
+    background-color: #fff;
+  }
+}
+
+.dui-button--warning {
+  color: #fff;
+  border-color: #e6a23c;
+  background-color: #e6a23c;
+  &:hover,
+  &:focus {
+    color: #e6a23c;
+    border-color: #e6a23c;
+    background-color: #fff;
+  }
+}
+
+.dui-button--warning.is-plain {
+  color: #e6a23c;
+  background: #fdf6ec;
+  border-color: #f5dab1;
+  &:hover,
+  &:focus {
+    color: #e6a23c;
+    border-color: #e6a23c;
+    background-color: #fff;
+  }
+}
+
+.dui-button--danger {
+  color: #fff;
+  border-color: #f56c6c;
+  background-color: #f56c6c;
+  &:hover,
+  &:focus {
+    color: #f56c6c;
+    border-color: #f56c6c;
+    background-color: #fff;
+  }
+}
+
+.dui-button--danger.is-plain {
+  color: #f56c6c;
+  background: #fef0f0;
+  border-color: #fbc4c4;
+  &:hover,
+  &:focus {
+    color: #f56c6c;
+    border-color: #f56c6c;
+    background-color: #fff;
+  }
+}
+
+.dui-button.is-round {
+  border-radius: 20px;
+  padding: 12px 24px;
+}
+
+.dui-button.is-circle {
+  border-radius: 50%;
+  padding: 12px;
 }
