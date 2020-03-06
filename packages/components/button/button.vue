@@ -7,7 +7,7 @@
 </template>
 
 <script>
-const preCls = 'dui-button'
+const prefixCls = 'dui-button'
 
 export default {
   // 方便组件注册找到组件名
@@ -38,8 +38,8 @@ export default {
   computed: {
     classes () {
       return [
-        `${preCls}`,
-        `${preCls}--${this.type}`,
+        `${prefixCls}`,
+        `${prefixCls}--${this.type}`,
         {
           'is-plain': this.plain,
           'is-round': this.round,
@@ -47,9 +47,6 @@ export default {
         }
       ]
     }
-  },
-  created () {
-    // console.log(this.plain)
   }
 }
 </script>

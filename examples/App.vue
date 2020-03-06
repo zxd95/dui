@@ -28,6 +28,18 @@
       <dui-button circle icon="icon-message" type="warning"></dui-button>
       <dui-button circle icon="icon-delete" type="danger"></dui-button>
     </div>
+    <!-- 排版 -->
+    <div class="row">
+      <dui-typography>
+        <dui-typography-title>Dui desgin</dui-typography-title>
+        <dui-typography-title level="2">Dui desgin</dui-typography-title>
+        <dui-typography-title level="3">Dui desgin</dui-typography-title>
+        <dui-typography-title level="4">Dui desgin</dui-typography-title>
+        <!-- <dui-typography-paragraph>
+          <dui-typography-text></dui-typography-text>
+        </dui-typography-paragraph> -->
+      </dui-typography>
+    </div>
   </div>
 </template>
 

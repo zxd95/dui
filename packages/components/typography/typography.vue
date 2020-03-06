@@ -1,12 +1,26 @@
 <template>
-  <div></div>
+  <aside :class="classes">
+    <slot></slot>
+  </aside>
 </template>
 
 <script>
-export default {
+const prefixCls = 'dui-typography'
 
+export default {
+  name: 'DuiTypography',
+  computed: {
+    classes () {
+      return [
+        `${prefixCls}`
+      ]
+    }
+  }
 }
 </script>
 
-<style>
+<style lang="scss">
+.dui-typography {
+  color: #181818;
+}
 </style>
