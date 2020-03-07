@@ -1,13 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
-import DuiButton from './../packages/components/button/button.vue'
-import DuiTypography from './../packages/components/typography/typography.vue'
-import DuiTypographyTitle from './../packages/components/typography/typographyTitle.vue'
+import DUI from './../packages/index' // 导入UI插件
+import VueClipboard from 'vue-clipboard2' // 导入复制插件
 
 Vue.config.productionTip = false
-Vue.component(DuiButton.name, DuiButton)
-Vue.component(DuiTypography.name, DuiTypography)
-Vue.component(DuiTypographyTitle.name, DuiTypographyTitle)
+
+// 注册组件库
+Vue.use(DUI)
+// 注册复制插件
+Vue.use(VueClipboard)
 
 new Vue({
   render: h => h(App)
