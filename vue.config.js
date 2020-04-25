@@ -3,7 +3,7 @@
  * @Date: 2020-03-04 22:06:08
  */
 module.exports = {
-  // 修改 src 目录   为 examples 目录
+  // 修改 src 目录 为 examples 目录
   pages: {
     index: {
       entry: 'examples/main.js',
